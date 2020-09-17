@@ -1,0 +1,158 @@
+extends layout
+
+block content
+  // Navigation
+  nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+    a.navbar-brand.js-scroll-trigger(href='#page-top')
+      span.d-block.d-lg-none Gonzalo Gauto
+      span.d-none.d-lg-block
+        img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='images/profile.jpg' alt='')
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#about') Sobre mi
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#experience') Experiencia
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#education') Educación
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#skills') Habilidades
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#interests') Intereses
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#awards') Cursos
+  // Page Content
+  .container-fluid.p-0
+    // About
+    section#about.resume-section
+      .resume-section-content
+        h1.mb-0
+          | Gonzalo
+          span.text-primary Gauto
+        .subheading.mb-5
+          | Batallan 3357 &middot; Buenos Aires, CP 1674 &middot; (011) 15-3669-0528 &middot;
+          a(href='mailto:gonzalo.gauto@gmail.com') gonzalo.gauto@gmail.com
+        p.lead.mb-5
+          | Tengo 26 años y vivo en Buenos Aires - ARG. Durante mi tiempo libre me gusta diseñar prototipos de aplicaciones móviles e ir integrando las mismas a los diferentes servicios que Google brinda, como Firebase. Me encuentro en constante capacitación dentro del ámbito tecnológico en busca de mejorar y actualizar mis conocimientos.
+        .social-icons
+          a.social-icon(href='https://www.linkedin.com/in/gonzalo-martin-gauto-190b52152/')
+            i.fab.fa-linkedin-in
+          a.social-icon(href='https://github.com/Gonzaa25')
+            i.fab.fa-github
+          //- a.social-icon(href='#')
+          //-   i.fab.fa-twitter
+          //- a.social-icon(href='#')
+          //-   i.fab.fa-facebook-f
+    hr.m-0
+    // Experience
+    section#experience.resume-section
+      .resume-section-content
+        h2.mb-5 Experiencia
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 Zoologic
+            .subheading.mb-3 Mesa de ayuda - Dragonfish
+            p
+              | Soporte correspondiente al sistema de facturación DRAGONFISH. Soporte de nivel 1 para todos los clientes de la empresa con dicho sistema.Se asiste en los circuitos de venta,importacion,exportacion,etc.Mantenimiento y corrección de errores.
+            .subheading.mb-3 Soporte Nike - Dragonfish
+            p
+              | Soporte correspondiente al sistema de facturación DRAGONFISH (Versión exclusiva para NIKE ARG) , el mismo fue utilizado por varios locales de la marca , por lo que el trabajo consiste en elaborar reportes mediante el sistema mismo o por SQL , controlar y mantener las bases de datos que contienen la informacion , revisar interfaces que se exportan y se reciben de SAP. Colaborar con los demás sectores de la marca , como los de finanzas y auditorias.
+            .subheading.mb-3 Mesa de ayuda - Lince
+            p
+              | Soporte correspondiente al sistema de facturación LINCE INDUMENTARIA , el mismo es utilizado por varios locales de ropa en la argentina , por lo que el trabajo consiste en resolver cualquier problema o consulta que tenga el cliente.
+          .flex-shrink-0
+            span.text-primary Abril 2015 - Presente
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 Gobierno de la ciudad
+            .subheading.mb-3 Pasantia - Plan Conectar Igualdad
+            p
+              | Encargado del mantenimiento y puesta en funcionamiento de las maquinas a repartir en cada colegio técnico de la ciudad de buenos aires.
+          .flex-shrink-0
+            span.text-primary Marzo - Julio 2012
+    hr.m-0
+    // Education
+    section#education.resume-section
+      .resume-section-content
+        h2.mb-5 Educación
+        //- .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        //-   .flex-grow-1
+        //-     h3.mb-0 University of Colorado Boulder
+        //-     .subheading.mb-3 Bachelor of Science
+        //-     div Computer Science - Web Development Track
+        //-     p GPA: 3.23
+        //-   .flex-shrink-0
+        //-     span.text-primary August 2006 - May 2010
+        .d-flex.flex-column.flex-md-row.justify-content-between
+          .flex-grow-1
+            h3.mb-0 Escuela Técnica Nº13 Libertador Gral. San Martín
+            .subheading.mb-3 Técnico en computación
+            p Promedio: 7.50
+          .flex-shrink-0
+            span.text-primary Marzo 2007 - Diciembre 2012
+    hr.m-0
+    // Skills
+    section#skills.resume-section
+      .resume-section-content
+        h2.mb-5 Habilidades
+        .subheading.mb-3 Lenguajes de programación y herramientas
+        ul.list-inline.dev-icons
+          li.list-inline-item
+            i.fab.fa-js-square
+          li.list-inline-item
+            i.fab.fa-node-js
+          li.list-inline-item
+            i.fab.fa-github-square
+          li.list-inline-item
+            i.fab.fa-npm
+          li.list-inline-item
+            i.fab.fa-bitbucket
+          li.list-inline-item
+            i.fab.fa-python
+        .subheading.mb-3 Flujo de trabajo
+        ul.fa-ul.mb-0
+          li
+            span.fa-li
+              i.fas.fa-check
+            |                             Mobile
+          li
+            span.fa-li
+              i.fas.fa-check
+            |                             Web
+    hr.m-0
+    // Interests
+    section#interests.resume-section
+      .resume-section-content
+        h2.mb-5 Intereses
+        p
+          | Soy una persona interesada en el desarrollo de aplicaciones móviles. Desde el 2017 empecé con Flutter desde su lanzamiento en el cual aprendí mucho sobre la integración con Firebase y todas sus herramientas.
+        p.mb-0
+          | Me gusta actualizarme dentro de este ambiente y entender sobre el funcionamiento de cada aplicación. También suelo ver como funcionan otros productos y servicios de Google como Smart Home o DialogFlow.
+    hr.m-0
+    // Awards
+    section#awards.resume-section
+      .resume-section-content
+        h2.mb-5 Cursos Y Certificaciones
+        ul.fa-ul.mb-0
+          li
+            span.fa-li
+              i.fas.fa-award.text-warning
+            |                             The Complete 2020 Flutter Development Bootcamp with Dart - Certificado Udemy
+          li
+            span.fa-li
+              i.fas.fa-award.text-warning
+            |                             Desarrollo del lado servidor: NodeJS, Express y MongoDB - Certificado Coursera
+          li
+            span.fa-li
+              i.fas.fa-award.text-warning
+            |                             Introducción a la programación con Python - Certificado Coursera
+          li
+  // Bootstrap core JS
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+  // Third party plugin JS
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+  // Core theme JS
+  script(src='/javascripts/scripts.js')
