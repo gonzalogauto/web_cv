@@ -1,7 +1,11 @@
 {
   "name": "webcv",
   "version": "1.0.0",
+  "description": "primer web-cv",
   "private": true,
+  "engines": {
+    "node": "14.8.0"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
