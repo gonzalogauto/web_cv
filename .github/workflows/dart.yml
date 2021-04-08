@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Dart - CI
+name: Node - CI
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.token }}
-          publish_dir: ./bin/www
+          publish_dir: ./views
